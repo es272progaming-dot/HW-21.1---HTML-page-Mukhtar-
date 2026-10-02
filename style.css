@@ -1,0 +1,88 @@
+
+body {
+    background-color: #f4f6f8;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.image{
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Заголовок 1-го уровня */
+h1 {
+    font-size: 36px;
+}
+
+/* Заголовок 2-го уровня */
+h2 {
+    text-align: center;
+    color: #34495e;
+}
+
+/* Навигация */
+nav {
+    margin-top: 20px;
+}
+
+/* Навигация линков(ссылок) */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* Покрытие при наведении на навигацию*/
+nav a:hover {
+    color: #f1c40f;
+}
+
+/* Основа*/
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+}
+
+/* Текст/параграф*/
+p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* Списки */
+li {
+    margin-bottom: 10px;
+}
+
+/* Галерея */
+figure {
+    text-align: center;
+    margin: 30px 0;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Нижняя часть сайта */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
