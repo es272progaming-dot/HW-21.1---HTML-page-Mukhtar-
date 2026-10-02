@@ -3,25 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Галерея Мухтара</title>
-    <link rel="stylesheet" href="../style.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+        <style> .carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+        }
+    </style>
+    <!--
+    <link rel="stylesheet" href="../style.css"> -->
 </head>
 
 <body>
+    
 
     <header>
-        <h1>Галерея Мухтара</h1>
-
+         <!--Проверка на использование класса text-center в bootstrap-->
+        <h1 class="text-center">Галерея Мухтара</h1>
+        <!-- Проверка на использование навигации, поэтому для навигации я использую bootstrap в виде навигационной панели под этим комментарием
         <nav>
             <a href="../index.html">Главная</a> |
             <a href="../pages/contact.html">Контакты</a> |
             <a href="../pages/gallery.html">Фотогалерея</a>
         </nav>
+        -->
+        <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Главная </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../pages/contact.html">Контакты</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../pages/gallery.html">Фотогалерея</a>
+        </li>
     </header>
 
-    <hr>
-
-
-        <h2>Фотографии Мухтара</h2>
+    <!-- Проверка на использование карусели бутстреп с фотографиями Мухтара 
+    <h2 class="text-center">Фотографии Мухтара</h2>-->
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../photos/mukhtar1.jpg" class="d-block mx-auto" alt="Мухтар">
+      <div class="carousel-caption d-none d-md-block">
+    <h5>Мухтар</h5>
+    <p>Наш любимый пёс.</p>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../photos/mukhtar2.jpg" class="d-block mx-auto" alt="Мухтар">
+       <div class="carousel-caption d-none d-md-block">
+        <h5>Мухтар</h5>
+        <p>Наш верный друг</p>
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+<!--
+        <h2>Фотографии Мухтара предыдущие</h2>
 
             <img class="image" src="../photos/mukhtar1.jpg"
                  alt="Мухтар сидит возле дома">
@@ -31,13 +84,13 @@
             <img class="image" src="../photos/mukhtar2.jpg"
                  alt="Мухтар на прогулке">
                  <p> Мухтар на прогулке</p>
-
+-->
 
     <hr>
 
-    <footer>
+    <footer class="text-center">
         <p>2026 Собачка Мухтар. Это нижняя часть страницы фотогалереи(футер)</p>
     </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
